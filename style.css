@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: arial,sans-serif;
+  /*overflow: hidden;*/
+}
+.navBar {
+  list-style-type: none;
+  padding-right: 20px;
+  margin-top: 20px;
+  float: right;
+}
+ .logIn {
+   font-weight: bold;
+   color: white;
+   display: block;
+   padding: 8px 15px;
+   background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+   border-radius: 2px;
+ }
+
+.navBar li{
+  display: inline-block;
+  line-height: 24px;
+  padding-right: 15px;
+}
+.navBar li:hover{
+  cursor: pointer;
+}
+.sev:hover{
+  text-decoration: underline;
+}
+.centro {
+  display: block;
+  text-align: center;
+  padding: 150px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color:rgba(0,0,0,.54);
+  margin: 25;
+  padding: 10px 15px;
+  background: rgba(0,0,0,.14);
+  border: 1px solid rgba(0,0,0,.04);
+}
+
+.button:hover{
+  color: rgba(0,0,0,.74);
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.24);
+}
+
+.centro p  a{
+  text-decoration: none;
+  margin:7;
+}
+
+.centro p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+input{
+  width: 500px;
+  border: 1px solid rgba(0,0,0,.24);
+  height: 40px;
+  border-radius: 2px;
+  margin-left: -16px;
+  padding-left: 16px;
+  margin-top: 30px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.region {
+  display: block;
+  background: rgba(0,0,0,.14);
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.24);;
+  height: 50px;
+
+  font-size: 15px;
+  color: rgba(0,0,0,.64);
+}
+
+.region span{
+  padding: 30px;
+}
+.cuadro{
+  background:rgba(0,0,0,.14);
+  color:rgba(0,0,0,.64);;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  padding: 0px;
+  height: 50;
+  width:100%;
+}
+.footer {
+  list-style-type: none;
+
+}
+
+.left li{
+  left: 0px;
+}
+
+.footer li {
+  font-size: small;
+  padding: 15px;
+  display: inline;
+  float: right;
+}
+.footer li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
