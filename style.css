@@ -2,32 +2,44 @@
   padding: 0;
   margin: 0;
   font-family: arial,sans-serif;
-  /*overflow: hidden;*/
+
 }
 .navBar {
   list-style-type: none;
   padding-right: 20px;
   margin-top: 20px;
   float: right;
+  font-size: small;
 }
  .logIn {
+   text-decoration: none;
    font-weight: bold;
    color: white;
    display: block;
-   padding: 8px 15px;
+   padding: 4px 15px;
    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
    border-radius: 2px;
  }
+
+.logIn:hover{
+  cursor: default;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+}
 
 .navBar li{
   display: inline-block;
   line-height: 24px;
   padding-right: 15px;
 }
-.navBar li:hover{
-  cursor: pointer;
+
+.sev a{
+  color: rgba(0,0,0,1);
+  text-decoration: none;
 }
-.sev:hover{
+
+.sev a:hover{
+  color: rgba(0,0,0,.74);
+  cursor: pointer;
   text-decoration: underline;
 }
 .centro {
@@ -37,12 +49,14 @@
 }
 
 .button {
+  font-size: small;
+  font-weight: bold;
   display: inline-block;
   text-decoration: none;
   color:rgba(0,0,0,.54);
-  margin: 25;
-  padding: 10px 15px;
-  background: rgba(0,0,0,.14);
+  margin: 20px 5px;
+  padding: 8px 20px;
+  background: rgba(0,0,0,.04);
   border: 1px solid rgba(0,0,0,.04);
 }
 
@@ -50,6 +64,27 @@
   color: rgba(0,0,0,.74);
   cursor: pointer;
   border: 1px solid rgba(0,0,0,.24);
+}
+
+#menu {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  height: 23px;
+  padding-top: -10px;
+  width: 23px;
+  background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  background-position: -135px -40px;
+  opacity: .55;
+}
+
+#menu:hover{
+  cursor: pointer;
+  opacity: .9;
+}
+
+.centro p{
+  font-size: small;
 }
 
 .centro p  a{
@@ -63,8 +98,8 @@
 }
 
 input{
-  width: 500px;
-  border: 1px solid rgba(0,0,0,.24);
+  width: 600px;
+  border: 1px solid rgba(0,0,0,.04);
   height: 40px;
   border-radius: 2px;
   margin-left: -16px;
@@ -73,13 +108,22 @@ input{
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
+input:active{
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.16), 0 0 0 2px rgba(0,0,0,0.08);
+}
+
+.footer {
+  width:100%;
+  bottom: 0;
+}
+
 .region {
   display: block;
-  background: rgba(0,0,0,.14);
-  position: absolute;
-  bottom: 50px;
+  background: rgba(0,0,0,.04);
+  position: relative;
+  bottom: 0px;
   width: 100%;
-  border: 1px solid rgba(0,0,0,.24);;
+  border-top: 1px solid rgba(0,0,0,.24);
   height: 50px;
 
   font-size: 15px;
@@ -87,34 +131,37 @@ input{
 }
 
 .region span{
-  padding: 30px;
+  display: inline-block;
+  padding: 15px 30px;
 }
 .cuadro{
-  background:rgba(0,0,0,.14);
+  border-top: 1px solid rgba(0,0,0,.24);
+  background:rgba(0,0,0,.04);
   color:rgba(0,0,0,.64);;
   margin: 0;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   padding: 0px;
-  height: 50;
+  height: 40;
   width:100%;
 }
-.footer {
+.left li, .right li{
   list-style-type: none;
+  font-size: small;
+  padding: 12px 0px;
+  display: inline;
+}
 
+.left li:hover, .right li:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .left li{
-  left: 0px;
+  float: left;
+  margin-left: 30px;
 }
-
-.footer li {
-  font-size: small;
-  padding: 15px;
-  display: inline;
+.right li{
   float: right;
-}
-.footer li:hover{
-  cursor: pointer;
-  text-decoration: underline;
+  margin-right: 30px;
 }
